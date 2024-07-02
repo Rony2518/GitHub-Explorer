@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { activate } from "firebase/remote-config";
-import { disableNetwork } from "firebase/firestore";
 
 export default function Navbar({ isLogged }) {
   const [isActive, setIsActive] = useState(false);
