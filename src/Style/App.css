@@ -43,9 +43,15 @@ nav {
     gap: 20px;
 }
 
+.navContainer li .hoverLine{
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+    transition: 0.5s;
+}
 
-.navContainer li a:hover {
-    color: blue;
+.navContainer li:hover .hoverLine{
+    width: 100%;
 }
 
 nav a {

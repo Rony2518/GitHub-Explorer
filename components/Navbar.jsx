@@ -23,19 +23,24 @@ export default function Navbar({ isLogged }) {
         <ul className={`navContainer ${isActive ? "active" : ""}`}>
           <li>
             <NavLink to={"/"}>Repos</NavLink>
+            <div className="hoverLine"></div>
           </li>
           <li>
             <NavLink to={"/users"}>Users</NavLink>
+            <div className="hoverLine"></div>
           </li>
           <li>
             <NavLink to={"/authProfile"}>Profile</NavLink>
+            <div className="hoverLine"></div>
           </li>
           <li>
             <NavLink to={"/search"}>Search</NavLink>
+            <div className="hoverLine"></div>
           </li>
           {!isLogged && (
             <li>
               <NavLink to={"/login"}>Login</NavLink>
+              <div className="hoverLine"></div>
             </li>
           )}
           <button className="navBtn closeBtn" onClick={toggleNavbar}>
